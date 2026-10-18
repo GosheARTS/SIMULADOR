@@ -9,7 +9,18 @@
 <body>
 
     <div class="container">
-        <h1>Simulador de Crédito</h1>
+        <header class="encabezado">
+            <h2 class="empresa">GenDev_ARTS</h2>
+            <p class="lema">Créditos simples, claros y a tu medida</p>
+            <p class="descripcion">
+                GenDev_ARTS es una entidad financiera ficticia creada con fines
+                educativos. Ofrece créditos con interés simple, cálculo
+                transparente de cuotas y una respuesta inmediata sobre la
+                aprobación, para que cada persona conozca su capacidad de pago
+                antes de decidir.
+            </p>
+        </header>
+    <h1>Simulador de Crédito</h1>
 
         <div class="secciones">
 
@@ -47,10 +58,11 @@
             <p>Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
         </div>
 
-        <div class="buttons">
+                <div class="buttons">
             <button id="btnCalcularCredito" onclick="calcular();">Calcular Crédito</button>
             <button id="btnReiniciar" onclick="reiniciar();">Reiniciar</button>
         </div>
+        <p class="pie">GenDev_ARTS · Entidad ficticia con fines educativos.</p>
     </div>
 
     <script src="funciones.js"></script>
