@@ -4,6 +4,12 @@ function calcular(){
     let ingresos;
     let egresos;
     let disponible;
+    let capacidadPago;
+    let monto;
+    let plazo;
+    let tasa;
+    let interes;
+
 
     ingresos = parseFloat(document.getElementById("txtIngresos").value);
     egresos = parseFloat(document.getElementById("txtEgresos").value);
@@ -13,4 +19,11 @@ function calcular(){
 
     capacidadPago = calcularCapacidadPago(disponible);
     document.getElementById("spnCapacidadPago").textContent = "USD " + capacidadPago.toFixed(2);
+
+    monto = parseInt(document.getElementById("txtMonto").value);
+    plazo = parseInt(document.getElementById("txtPlazo").value);
+    tasa = parseInt(document.getElementById("txtTasaInteres").value);
+
+    interes = calcularInteresSimple(monto, tasa, plazo);
+    document.getElementById("spnInteresPagar").textContent = "USD " + interes.toFixed(2);
 }
