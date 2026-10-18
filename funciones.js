@@ -34,3 +34,13 @@ function calcularCuotaMensual(total, plazoAnios){
     cuota = total / meses;
     return cuota;
 }
+
+function aprobarCredito(capacidadPago, cuotaMensual){
+    let aprobado;
+    if(capacidadPago > cuotaMensual){
+        aprobado = true;
+    }else{
+        aprobado = false;
+    }
+    return aprobado;
+}

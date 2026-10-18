@@ -10,6 +10,7 @@ function calcular(){
     let tasa;
     let interes;
     let total;
+    let aprobado;
 
 
     ingresos = parseFloat(document.getElementById("txtIngresos").value);
@@ -33,4 +34,11 @@ function calcular(){
 
     cuota = calcularCuotaMensual(total, plazo);
     document.getElementById("spnCuotaMensual").textContent = "USD " + cuota.toFixed(2);
+
+    aprobado = aprobarCredito(capacidadPago, cuota);
+    if(aprobado){
+        document.getElementById("spnEstadoCredito").textContent = "CREDITO APROBADO";
+    }else{
+        document.getElementById("spnEstadoCredito").textContent = "CREDITO RECHAZADO";
+    }
 }
