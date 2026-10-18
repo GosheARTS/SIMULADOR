@@ -9,6 +9,7 @@ function calcular(){
     let plazo;
     let tasa;
     let interes;
+    let total;
 
 
     ingresos = parseFloat(document.getElementById("txtIngresos").value);
@@ -26,4 +27,7 @@ function calcular(){
 
     interes = calcularInteresSimple(monto, tasa, plazo);
     document.getElementById("spnInteresPagar").textContent = "USD " + interes.toFixed(2);
+    
+    total = calcularTotalPagar(monto, interes);
+    document.getElementById("spnTotalPrestamo").textContent = "USD " + total.toFixed(2);
 }
