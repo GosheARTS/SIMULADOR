@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Crédito</title>
+    <title>GenDev_ARTS · Simulador de crédito</title>
     <link rel="stylesheet" href="simulador.css">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="logo-emblema.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 
     <div class="container">
+
         <header class="encabezado">
-            <h2 class="empresa">GenDev_ARTS</h2>
+            <img src="logo-gendev.svg" alt="GenDev_ARTS" class="logo">
             <p class="lema">Créditos simples, claros y a tu medida</p>
             <p class="descripcion">
                 GenDev_ARTS es una entidad financiera ficticia creada con fines
@@ -20,35 +24,45 @@
                 antes de decidir.
             </p>
         </header>
-    <h1>Simulador de Crédito</h1>
+
+        <h1>Simulador de Crédito</h1>
 
         <div class="secciones">
 
             <div class="seccion">
                 <h2>Datos financieros</h2>
+
                 <label for="txtIngresos">Ingresos:</label>
-                <input type="text" id="txtIngresos">
+                <input type="text" id="txtIngresos" aria-describedby="ayudaIngresos">
+                <small class="ayuda" id="ayudaIngresos">Lo que recibes al mes, en USD</small>
 
                 <label for="txtEgresos">Egresos:</label>
-                <input type="text" id="txtEgresos">
+                <input type="text" id="txtEgresos" aria-describedby="ayudaEgresos">
+                <small class="ayuda" id="ayudaEgresos">Tus gastos fijos al mes, en USD</small>
 
                 <p>Disponible: <span id="spnDisponible"></span></p>
                 <p>Capacidad de pago mensual: <span id="spnCapacidadPago"></span></p>
+                <small class="ayuda">Equivale al 50 % de tu valor disponible</small>
             </div>
 
             <div class="seccion">
                 <h2>Solicitud de crédito</h2>
+
                 <label for="txtMonto">Monto:</label>
-                <input type="text" id="txtMonto">
+                <input type="text" id="txtMonto" aria-describedby="ayudaMonto">
+                <small class="ayuda" id="ayudaMonto">Valor del crédito que solicitas, en USD</small>
 
                 <label for="txtPlazo">Plazo en años:</label>
-                <input type="text" id="txtPlazo">
+                <input type="text" id="txtPlazo" aria-describedby="ayudaPlazo">
+                <small class="ayuda" id="ayudaPlazo">Tiempo para pagar, en años</small>
 
                 <label for="txtTasaInteres">Tasa de interés:</label>
-                <input type="text" id="txtTasaInteres">
+                <input type="text" id="txtTasaInteres" aria-describedby="ayudaTasa">
+                <small class="ayuda" id="ayudaTasa">Tasa anual simple, en %</small>
 
                 <p>Interés a pagar: <span id="spnInteresPagar"></span></p>
                 <p>Total préstamo: <span id="spnTotalPrestamo"></span></p>
+                <small class="ayuda">Incluye USD 100 de impuestos y contribución a SOLCA</small>
                 <p>Cuota mensual: <span id="spnCuotaMensual"></span></p>
             </div>
 
@@ -58,12 +72,42 @@
             <p>Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
         </div>
 
-                <div class="buttons">
+        <div class="buttons">
             <button id="btnCalcularCredito" onclick="calcular();">Calcular Crédito</button>
             <button id="btnReiniciar" onclick="reiniciar();">Reiniciar</button>
         </div>
-        <p class="pie">GenDev_ARTS · Entidad ficticia con fines educativos.</p>
+
     </div>
+
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h3>GenDev_ARTS</h3>
+                <p>Entidad financiera ficticia con fines educativos.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>contacto@gendev-arts.example</p>
+                <p>Tel. 000 000 0000</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes</p>
+                <p>08:00 a 17:00</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+        </div>
+        <p class="pie-legal">
+            © 2026 GenDev_ARTS · Proyecto académico, no es una entidad
+            financiera real. Los cálculos son una simulación y no constituyen
+            una oferta de crédito.
+        </p>
+    </footer>
 
     <script src="funciones.js"></script>
     <script src="simulador.js"></script>

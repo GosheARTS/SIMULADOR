@@ -1,0 +1,66 @@
+//PROMPTS GENERALES: Utilizada la IA para indagar antes y optar por opciones para el desarrollo del proyecto antes de aplicar cambios directos.
+Segun mi pedido Original mejoro el Prompt con "mejores palabras" como se lo solicite.//
+//Se aplicaran cambios al Html y el Css en mayor manera.//
+
+PROMPT 1
+Rol: Actúa como un diseñador frontend experto en HTML y CSS, especializado en
+interfaces empresariales responsive.
+
+Contexto: Tengo un simulador de crédito ya funcional (simulador.html,
+simulador.css, simulador.js y funciones.js). La lógica en JavaScript no se debe
+modificar y los ids de los elementos del HTML deben mantenerse exactamente igual,
+porque el JavaScript los usa.
+
+Solicitud: Mejora la parte visual del simulador con un estilo en blanco y negro,
+parecido al de mis juegos (Juego Limones y Juego Cazando): contenedor con borde
+definido y esquinas redondeadas, botones con forma de píldora con efecto hover
+suave, y una paleta limitada a blanco, negro y grises. Debe ser responsive: en
+computadora, las secciones "Datos financieros" y "Solicitud de crédito" se
+muestran en dos columnas, y en celular se apilan en una sola columna con los
+botones uno debajo del otro. Resalta el estado del crédito en un bloque propio.
+
+PROMPT 2
+Rol: Actúa como un diseñador frontend experto en HTML y CSS, especializado en
+interfaces empresariales responsive.
+
+Solicitud: Agrega a mi simulador de crédito la identidad de una empresa
+ficticia llamada GenDev_ARTS. Debe aparecer un encabezado con el nombre de la
+empresa, un lema corto y una descripción breve de a qué se dedica (entidad
+financiera ficticia con fines educativos que ofrece créditos con interés simple
+y cálculo transparente de cuotas), y un pie de página con una nota aclarando
+que es una entidad ficticia. Mantén el estilo blanco y negro ya aplicado, no
+modifiques el JavaScript ni los ids existentes, y conserva el diseño
+responsive.
+
+PROMPT 3
+Rol: Actúa como un diseñador gráfico experto en identidad visual.
+
+Solicitud: Crea un logo en blanco y negro para GenDev_ARTS mezclando dos
+imágenes de referencia: el logo de Git y el logotipo de un videojuego. La IA
+no reprodujo el logotipo del videojuego por ser una marca registrada y propuso
+un diseño original: un emblema con ramas de control de versiones y el nombre
+en tipografía serif con una línea fina y una estrella.
+
+Ajustes posteriores:
+3.1 Alejar el emblema del logo de Git y agregar una corona sobre el nombre.
+3.2 Separar el emblema con corona del texto con la línea y la estrella.
+3.3 Usar mi propio logo (rombo negro con ramas y estrella) y juntarlo con el
+texto de la primera propuesta (nombre, línea, estrella y leyenda).
+
+PROMPT 4
+Rol: Actúa como un diseñador frontend experto en HTML y CSS, especializado en
+interfaces empresariales responsive.
+
+Solicitud: Mejora el simulador de crédito de GenDev_ARTS sin modificar el
+JavaScript ni los ids existentes: (1) agrega un icono de pestaña (favicon) con
+el emblema de la empresa; (2) agrega un texto de ayuda breve bajo cada campo y
+una nota indicando que el total incluye USD 100 de impuestos y contribución a
+SOLCA; (3) agrega animaciones suaves de aparición y de hover, respetando
+prefers-reduced-motion; (4) agrega un pie de página completo con descripción,
+contacto ficticio, horario y enlaces de relleno, en estilo blanco y negro y
+responsive.
+
+Ajuste posterior:
+4.1 El icono no se mostraba en Firefox ni en Brave: agregar versiones .ico y
+PNG de respaldo y probar con un servidor local en vez de abrir el archivo
+directamente.
