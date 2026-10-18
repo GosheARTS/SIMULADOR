@@ -9,6 +9,8 @@ function calcular(){
     egresos = parseFloat(document.getElementById("txtEgresos").value);
 
     disponible = calcularDisponible(ingresos, egresos);
-
     document.getElementById("spnDisponible").textContent = "USD " + disponible.toFixed(2);
+
+    capacidadPago = calcularCapacidadPago(disponible);
+    document.getElementById("spnCapacidadPago").textContent = "USD " + capacidadPago.toFixed(2);
 }
