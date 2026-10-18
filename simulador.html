@@ -11,36 +11,48 @@
     <div class="container">
         <h1>Simulador de Crédito</h1>
 
-        <h2>Datos financieros</h2>
-        <label for="txtIngresos">Ingresos:</label>
-        <input type="text" id="txtIngresos">
+        <div class="secciones">
 
-        <label for="txtEgresos">Egresos:</label>
-        <input type="text" id="txtEgresos">
+            <div class="seccion">
+                <h2>Datos financieros</h2>
+                <label for="txtIngresos">Ingresos:</label>
+                <input type="text" id="txtIngresos">
 
-        <p>Disponible: <span id="spnDisponible"></span></p>
-        <p>Capacidad de pago mensual: <span id="spnCapacidadPago"></span></p>
+                <label for="txtEgresos">Egresos:</label>
+                <input type="text" id="txtEgresos">
 
-        <h2>Solicitud de crédito</h2>
-        <label for="txtMonto">Monto:</label>
-        <input type="text" id="txtMonto">
+                <p>Disponible: <span id="spnDisponible"></span></p>
+                <p>Capacidad de pago mensual: <span id="spnCapacidadPago"></span></p>
+            </div>
 
-        <label for="txtPlazo">Plazo en años:</label>
-        <input type="text" id="txtPlazo">
+            <div class="seccion">
+                <h2>Solicitud de crédito</h2>
+                <label for="txtMonto">Monto:</label>
+                <input type="text" id="txtMonto">
 
-        <label for="txtTasaInteres">Tasa de interés:</label>
-        <input type="text" id="txtTasaInteres">
+                <label for="txtPlazo">Plazo en años:</label>
+                <input type="text" id="txtPlazo">
 
-        <p>Interés a pagar: <span id="spnInteresPagar"></span></p>
-        <p>Total préstamo: <span id="spnTotalPrestamo"></span></p>
-        <p>Cuota mensual: <span id="spnCuotaMensual"></span></p>
-        <p>Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
+                <label for="txtTasaInteres">Tasa de interés:</label>
+                <input type="text" id="txtTasaInteres">
+
+                <p>Interés a pagar: <span id="spnInteresPagar"></span></p>
+                <p>Total préstamo: <span id="spnTotalPrestamo"></span></p>
+                <p>Cuota mensual: <span id="spnCuotaMensual"></span></p>
+            </div>
+
+        </div>
+
+        <div class="estado">
+            <p>Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
+        </div>
 
         <div class="buttons">
             <button id="btnCalcularCredito" onclick="calcular();">Calcular Crédito</button>
             <button id="btnReiniciar" onclick="reiniciar();">Reiniciar</button>
         </div>
     </div>
+
     <script src="funciones.js"></script>
     <script src="simulador.js"></script>
 </body>
