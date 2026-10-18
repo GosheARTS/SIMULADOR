@@ -30,4 +30,7 @@ function calcular(){
     
     total = calcularTotalPagar(monto, interes);
     document.getElementById("spnTotalPrestamo").textContent = "USD " + total.toFixed(2);
+
+    cuota = calcularCuotaMensual(total, plazo);
+    document.getElementById("spnCuotaMensual").textContent = "USD " + cuota.toFixed(2);
 }
