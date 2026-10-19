@@ -33,11 +33,13 @@
                 <h2>Datos financieros</h2>
 
                 <label for="txtIngresos">Ingresos:</label>
-                <input type="text" id="txtIngresos" aria-describedby="ayudaIngresos">
+                <input type="text" id="txtIngresos" onblur="validarIngresos();" aria-describedby="ayudaIngresos error-txtIngresos">
+                <small class="error" id="error-txtIngresos"></small>
                 <small class="ayuda" id="ayudaIngresos">Lo que recibes al mes, en USD</small>
 
                 <label for="txtEgresos">Egresos:</label>
-                <input type="text" id="txtEgresos" aria-describedby="ayudaEgresos">
+                <input type="text" id="txtEgresos" onblur="validarEgresos();" aria-describedby="ayudaEgresos error-txtEgresos">
+                <small class="error" id="error-txtEgresos"></small>
                 <small class="ayuda" id="ayudaEgresos">Tus gastos fijos al mes, en USD</small>
 
                 <p>Disponible: <span id="spnDisponible"></span></p>
@@ -49,15 +51,18 @@
                 <h2>Solicitud de crédito</h2>
 
                 <label for="txtMonto">Monto:</label>
-                <input type="text" id="txtMonto" aria-describedby="ayudaMonto">
+                <input type="text" id="txtMonto" onblur="validarMonto();" aria-describedby="ayudaMonto error-txtMonto">
+                <small class="error" id="error-txtMonto"></small>
                 <small class="ayuda" id="ayudaMonto">Valor del crédito que solicitas, en USD</small>
 
                 <label for="txtPlazo">Plazo en años:</label>
-                <input type="text" id="txtPlazo" aria-describedby="ayudaPlazo">
+                <input type="text" id="txtPlazo" onblur="validarPlazo();" aria-describedby="ayudaPlazo error-txtPlazo">
+                <small class="error" id="error-txtPlazo"></small>
                 <small class="ayuda" id="ayudaPlazo">Tiempo para pagar, en años</small>
 
                 <label for="txtTasaInteres">Tasa de interés:</label>
-                <input type="text" id="txtTasaInteres" aria-describedby="ayudaTasa">
+                <input type="text" id="txtTasaInteres" onblur="validarTasa();" aria-describedby="ayudaTasa error-txtTasaInteres">
+                <small class="error" id="error-txtTasaInteres"></small>
                 <small class="ayuda" id="ayudaTasa">Tasa anual simple, en %</small>
 
                 <p>Interés a pagar: <span id="spnInteresPagar"></span></p>

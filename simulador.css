@@ -134,6 +134,28 @@ input:focus {
     color: #555555;
 }
 
+.error {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #333333;
+    animation: aparecer 0.2s ease backwards;
+}
+
+.error:empty {
+    display: none;
+}
+
+.error::before {
+    content: "✕ ";
+}
+
+input.invalido {
+    box-shadow: 0 0 0 2px #000000;
+}
+
 p {
     margin: 12px 0 0;
     font-size: 15px;

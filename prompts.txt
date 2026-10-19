@@ -64,3 +64,28 @@ Ajuste posterior:
 4.1 El icono no se mostraba en Firefox ni en Brave: agregar versiones .ico y
 PNG de respaldo y probar con un servidor local en vez de abrir el archivo
 directamente.
+
+PROMPT 5 (extra)
+Rol: Actúa como un desarrollador frontend experto en JavaScript y validación
+de formularios.
+
+Solicitud: Agrega validaciones con el evento onblur a los campos del
+simulador de crédito (ingresos, egresos, monto, plazo y tasa), mostrando el
+mensaje de error debajo de cada campo. Puedes modificar index.html,
+simulador.css y simulador.js, pero no funciones.js ni los ids existentes. Las
+funciones se escriben con la sintaxis function nombre().
+
+Mensajes exactos:
+- Campo vacío: "Este campo no puede quedar vacío"
+- Texto o símbolos: "Solo se aceptan números"
+- Más de 10 dígitos: "No se permiten más de 10 dígitos"
+- Valores no válidos: "No se permiten números negativos", "El valor debe ser
+  mayor que cero" y "El plazo debe ser un número entero de años"
+- Coherencia: "Los egresos no pueden ser mayores que los ingresos"
+
+Reglas: ingresos, monto, plazo y tasa deben ser mayores que cero (egresos
+puede ser cero). El plazo solo acepta enteros y los demás campos aceptan
+decimales con punto. Si hay algún error, "Calcular Crédito" no calcula, no
+muestra NaN y el estado queda en "ANALIZANDO...". "Reiniciar" también limpia
+los errores. Mantén el estilo blanco y negro, el diseño responsive y la
+accesibilidad con aria-invalid.
